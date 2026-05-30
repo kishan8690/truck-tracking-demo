@@ -1,0 +1,68 @@
+using Common;
+using DemoProject.Controllers;
+using DLT.Models.Models.DriverLocationTracking;
+using DLT.Service.Repository.Interface;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using Models.RequestModel;
+using Serilog;
+
+namespace DLT.Api.Controllers;
+
+[ApiController]
+[Route("api/[controller]")]
+public class LocationController : BaseController
+{
+    private readonly ILocationRepository _locationRepository;
+
+    public LocationController(ILocationRepository locationRepository)
+    {
+        _locationRepository = locationRepository;
+    }
+
+    [HttpGet]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> GetAllLocation()
+    {
+        Log.Information("Fetching all locations");
+
+        var res = await _locationRepository.GetAllLocation();
+        Log.Information("Repository returned result: {@Result}", res);
+
+        if (res == null)
+        {
+            Log.Warning("Location data is null");
+            return NotFound();
+        }
+
+        if (!res.Any())
+        {
+            Log.Warning("No locations found");
+            throw new HttpStatusCodeException((int)Common.StatusCode.BadRequest, "No results found");
+        }
+
+        Log.Information("Successfully fetched {LocationCount} locations", res.Count());
+        return Ok(res);
+    }
+
+    [HttpPost]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> CreateLocation([FromBody] LocationRequestModel model)
+    {
+        var res = await _locationRepository.AddLocation(model);
+        if (res == null)
+        {
+            Log.Warning("Location data is null");
+            return NotFound();
+        }
+        return Ok(res);
+    }
+
+    [HttpDelete("{locationSID}")]
+    [Authorize(Roles = "Admin")]
+    public async Task<IActionResult> DeleteLocation([FromRoute]string locationSID)
+    {
+        var res = await _locationRepository.DeleteLocation(locationSID);
+        return Ok(res);
+    }
+}

@@ -1,0 +1,467 @@
+2026-01-25 11:48:30.812 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:48:31.163 +05:30 [INF] Login attempt for Email: admin@gmail.com
+2026-01-25 11:48:31.172 +05:30 [INF] Attempting login for user with email: admin@gmail.com
+2026-01-25 11:48:33.211 +05:30 [WRN] Login failed. Wrong password for email: admin@gmail.com
+2026-01-25 11:48:33.216 +05:30 [ERR] HTTP error occurred during login for email: admin@gmail.com
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+2026-01-25 11:48:33.226 +05:30 [ERR] Exception occurred during login for Email: admin@gmail.com
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+   at DLT.Api.Controllers.UserController.Login(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 52
+2026-01-25 11:48:33.235 +05:30 [WRN] Custom HttpStatusCodeException: Password is Wrong
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+   at DLT.Api.Controllers.UserController.Login(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 52
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.InvokeAsync(HttpContext context) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Middlewares/ExceptionMiddleware.cs:line 23
+2026-01-25 11:48:33.247 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:54.498 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:54.509 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:54.512 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:54.534 +05:30 [INF] Login attempt for Email: max.driver@email.com
+2026-01-25 11:51:54.535 +05:30 [INF] Attempting login for user with email: max.driver@email.com
+2026-01-25 11:51:54.968 +05:30 [INF] User login successful for email: max.driver@email.com
+2026-01-25 11:51:54.972 +05:30 [INF] Generating JWT token for UserSID: USRa3f9cb91-d4ca-4be7-912d-9b0eff73d120, Role: 5
+2026-01-25 11:51:55.031 +05:30 [INF] JWT token generated successfully for UserSID: USRa3f9cb91-d4ca-4be7-912d-9b0eff73d120
+2026-01-25 11:51:55.031 +05:30 [INF] Login successful for UserSID: USRa3f9cb91-d4ca-4be7-912d-9b0eff73d120, Role: 5
+2026-01-25 11:51:55.067 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:55.857 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:55.858 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:55.858 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:55.859 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:55.865 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:55.957 +05:30 [INF] Fetching all trips for driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 11:51:55.972 +05:30 [INF] Fetching all trips for driver with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 11:51:56.427 +05:30 [INF] Successfully retrieved trips for Driver UserSID: USRa3f9cb91-d4ca-4be7-912d-9b0eff73d120
+2026-01-25 11:51:56.503 +05:30 [INF] Fetched 1 trips for driver
+2026-01-25 11:51:56.568 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:51:56.569 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:51:56.572 +05:30 [INF] Fetching all trips for driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 11:51:56.572 +05:30 [INF] Fetching all trips for driver with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 11:51:56.586 +05:30 [INF] Successfully retrieved trips for Driver UserSID: USRa3f9cb91-d4ca-4be7-912d-9b0eff73d120
+2026-01-25 11:51:56.586 +05:30 [INF] Fetched 1 trips for driver
+2026-01-25 11:51:56.587 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:59:00.416 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:59:00.442 +05:30 [INF] SignUp request received for Email: kadmin@yopmail.com
+2026-01-25 11:59:00.447 +05:30 [INF] Attempting to create user with email: kadmin@yopmail.com
+2026-01-25 11:59:00.526 +05:30 [WRN] User creation failed. User with phone number 1234567890 already exists
+2026-01-25 11:59:00.526 +05:30 [ERR] HTTP error occurred while creating user with email: kadmin@yopmail.com
+Common.HttpStatusCodeException: User with phone number already exists
+   at DLT.Service.Repository.Implementation.UserRepository.CreateUser(SignUpRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 50
+2026-01-25 11:59:00.528 +05:30 [ERR] Exception occurred while creating user with Email: kadmin@yopmail.com
+Common.HttpStatusCodeException: User with phone number already exists
+   at DLT.Service.Repository.Implementation.UserRepository.CreateUser(SignUpRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 50
+   at DLT.Api.Controllers.UserController.SignUp(SignUpRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 28
+2026-01-25 11:59:00.531 +05:30 [WRN] Custom HttpStatusCodeException: User with phone number already exists
+Common.HttpStatusCodeException: User with phone number already exists
+   at DLT.Service.Repository.Implementation.UserRepository.CreateUser(SignUpRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 50
+   at DLT.Api.Controllers.UserController.SignUp(SignUpRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 28
+   at lambda_method61(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.InvokeAsync(HttpContext context) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Middlewares/ExceptionMiddleware.cs:line 23
+2026-01-25 11:59:00.535 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 11:59:17.001 +05:30 [INF] ::::In Middleware::::
+2026-01-25 11:59:17.003 +05:30 [INF] SignUp request received for Email: kadmin@yopmail.com
+2026-01-25 11:59:17.006 +05:30 [INF] Attempting to create user with email: kadmin@yopmail.com
+2026-01-25 11:59:17.346 +05:30 [INF] User created successfully with email: kadmin@yopmail.com
+2026-01-25 11:59:17.346 +05:30 [INF] User created successfully with Email: kadmin@yopmail.com
+2026-01-25 11:59:17.347 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:02:38.472 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:02:38.474 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:02:38.476 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:02:38.477 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:02:39.076 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:02:39.077 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:03:20.075 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:03:20.077 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:03:20.081 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:03:20.082 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:04:03.585 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:04:03.587 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:04:03.589 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:04:03.589 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:04:13.975 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:04:13.976 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:04:13.978 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:04:13.979 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:04:40.152 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:04:40.168 +05:30 [INF] Login attempt for Email: kadmin@yopmail.com
+2026-01-25 12:04:40.168 +05:30 [INF] Attempting login for user with email: kadmin@yopmail.com
+2026-01-25 12:04:40.342 +05:30 [INF] User login successful for email: kadmin@yopmail.com
+2026-01-25 12:04:40.342 +05:30 [INF] Generating JWT token for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:04:40.343 +05:30 [INF] JWT token generated successfully for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583
+2026-01-25 12:04:40.343 +05:30 [INF] Login successful for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:04:40.344 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:07.786 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:07.803 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:05:07.804 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:05:07.928 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:05:07.930 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:05:07.932 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:18.479 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:18.480 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:18.482 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:18.482 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:24.127 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:24.127 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:24.131 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:24.131 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:31.475 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:31.476 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:31.480 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:31.480 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:42.929 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:42.931 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:05:42.933 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:05:42.933 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:06:08.079 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:06:08.082 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:06:08.085 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:06:08.087 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:12:47.593 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:12:47.595 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:12:47.598 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:12:47.600 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:12:48.358 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:12:48.360 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:13:09.841 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:13:09.841 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:13:09.843 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:13:09.843 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:13:59.845 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:13:59.857 +05:30 [INF] Login attempt for Email: kadmin@yopmail.com
+2026-01-25 12:13:59.857 +05:30 [INF] Attempting login for user with email: kadmin@yopmail.com
+2026-01-25 12:14:00.043 +05:30 [INF] User login successful for email: kadmin@yopmail.com
+2026-01-25 12:14:00.043 +05:30 [INF] Generating JWT token for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:14:00.045 +05:30 [INF] JWT token generated successfully for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583
+2026-01-25 12:14:00.045 +05:30 [INF] Login successful for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:14:00.045 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:14:06.639 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:14:06.640 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:14:06.642 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:14:06.642 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:14:47.894 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:14:47.895 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:14:47.897 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:14:47.898 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:06.416 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:06.418 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:06.420 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:06.428 +05:30 [INF] Login attempt for Email: kadmin@yopmail.com
+2026-01-25 12:15:06.428 +05:30 [INF] Attempting login for user with email: kadmin@yopmail.com
+2026-01-25 12:15:06.590 +05:30 [INF] User login successful for email: kadmin@yopmail.com
+2026-01-25 12:15:06.590 +05:30 [INF] Generating JWT token for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:15:06.590 +05:30 [INF] JWT token generated successfully for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583
+2026-01-25 12:15:06.590 +05:30 [INF] Login successful for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 12:15:06.591 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:07.116 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:07.116 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:07.119 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:07.119 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:07.184 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:07.203 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:15:07.206 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:15:07.208 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:09.632 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:09.654 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:09.692 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:09.712 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:17:09.728 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:17:09.825 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:09.826 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:17:09.828 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:19.639 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:19.639 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:19.642 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:19.642 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:19.655 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:19.661 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:19.676 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:19.724 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:19.724 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:19.729 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:19.729 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:19.731 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:19.731 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:19.738 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:19.738 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:19.738 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:24.631 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:24.636 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:24.637 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:24.651 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:24.651 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:24.652 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:29.631 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:29.631 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:29.633 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:29.635 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:29.636 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:29.647 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:29.647 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:29.647 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:34.631 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:34.634 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:34.635 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:34.664 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:34.665 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:34.665 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:39.628 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:39.628 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:39.629 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:39.631 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:39.631 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:39.636 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:39.636 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:39.636 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:44.628 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:44.631 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:44.632 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:44.649 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:44.649 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:44.650 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:49.641 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:49.642 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:49.647 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:49.653 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:49.654 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:49.672 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:49.672 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:49.673 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:54.629 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:54.632 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:54.636 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:54.651 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:54.652 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:54.652 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:59.629 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:59.630 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:17:59.636 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:17:59.638 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:17:59.639 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-01-25 12:17:59.653 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:17:59.653 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:17:59.654 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:03.388 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:03.389 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:03.394 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:03.394 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:03.394 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:03.397 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:03.398 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:18:03.416 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:03.416 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:03.417 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:03.418 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:03.420 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:03.420 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:18:03.427 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:03.428 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:03.428 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:17.496 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:17.497 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:17.498 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:17.499 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":"[{\"key\":\"tripStatus\",\"value\":7,\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:18:17.499 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"( tripStatus = 7 ) AND","Page":1,"PageSize":10}
+2026-01-25 12:18:17.557 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:17.557 +05:30 [INF] Successfully fetched 2 trips
+2026-01-25 12:18:17.558 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:20.396 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:20.396 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:20.400 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:20.402 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":"[{\"key\":\"tripStatus\",\"value\":8,\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-01-25 12:18:20.402 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"( tripStatus = 8 ) AND","Page":1,"PageSize":10}
+2026-01-25 12:18:20.438 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:20.438 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:20.438 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:25.144 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:25.146 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:25.147 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:25.149 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:25.149 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:18:25.163 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:25.163 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:25.163 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:27.781 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:27.781 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:27.783 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:27.785 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":2,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:27.786 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":2,"PageSize":10}
+2026-01-25 12:18:27.835 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:27.838 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:27.840 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:28.899 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:28.899 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:28.901 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:28.903 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":3,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:28.904 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":3,"PageSize":10}
+2026-01-25 12:18:28.953 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:28.953 +05:30 [INF] Successfully fetched 1 trips
+2026-01-25 12:18:28.954 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:30.865 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:30.867 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":2,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:30.867 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":2,"PageSize":10}
+2026-01-25 12:18:30.887 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:30.888 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:30.888 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:32.552 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:32.552 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:18:32.553 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:18:32.556 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:18:32.557 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:18:32.574 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:18:32.575 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:18:32.575 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:08.416 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:08.418 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:08.420 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:08.435 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"driverName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:08.436 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"driverName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:08.502 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:08.502 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:08.503 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:13.146 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:13.146 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:13.148 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:13.150 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"createdByName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:13.151 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"createdByName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:13.192 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:13.192 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:13.193 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:15.545 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:15.545 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:15.546 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:15.547 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"startLocationName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:15.548 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"startLocationName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:15.588 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:15.588 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:15.588 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:19.162 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:19.162 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:19.163 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:19.165 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:19.165 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:19.178 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:19.179 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:19.179 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:22.022 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:22.022 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:22.023 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:22.024 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"driverName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:22.025 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"driverName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:22.030 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:22.030 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:22.031 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:25.495 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:25.495 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:25.496 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:25.498 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"startLocationName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:25.498 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"startLocationName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:25.509 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:25.510 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:25.510 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:30.079 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:30.079 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:22:30.080 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:22:30.081 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:22:30.081 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:22:30.092 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:22:30.092 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:22:30.092 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:05.377 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:05.380 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:05.386 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:05.397 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":2,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:05.397 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":2,"PageSize":10}
+2026-01-25 12:38:05.461 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:05.461 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:05.462 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:07.554 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:07.555 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:07.561 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:07.564 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:07.565 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:38:07.589 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:07.589 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:07.590 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:16.232 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:16.233 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:16.234 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:16.237 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:16.237 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"ASC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:38:16.292 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:16.292 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:16.292 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:18.697 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:18.697 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:18.699 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:18.700 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"createdByName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:18.700 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"createdByName","SortOrder":"ASC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:38:18.740 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:18.740 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:18.741 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:21.429 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:21.429 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:21.430 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:21.431 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"driverName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:21.431 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"driverName","SortOrder":"ASC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:38:21.470 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:21.471 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:21.471 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:23.978 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:23.979 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:23.981 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:23.982 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"driverName","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-01-25 12:38:23.982 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"driverName","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-01-25 12:38:23.988 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-01-25 12:38:23.989 +05:30 [INF] Successfully fetched 10 trips
+2026-01-25 12:38:23.989 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.370 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.373 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.373 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.374 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.374 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.375 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.375 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 12:38:31.375 +05:30 [INF] ::::In Middleware::::
+2026-01-25 12:38:31.375 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 13:30:56.089 +05:30 [INF] ::::In Middleware::::
+2026-01-25 13:30:56.426 +05:30 [INF] Login attempt for Email: kadmin@yopmail.com
+2026-01-25 13:30:56.432 +05:30 [INF] Attempting login for user with email: kadmin@yopmail.com
+2026-01-25 13:30:59.100 +05:30 [INF] User login successful for email: kadmin@yopmail.com
+2026-01-25 13:30:59.103 +05:30 [INF] Generating JWT token for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 13:30:59.136 +05:30 [INF] JWT token generated successfully for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583
+2026-01-25 13:30:59.136 +05:30 [INF] Login successful for UserSID: USR-43547f22-b38f-4cef-bb2e-58955e2fc583, Role: 4
+2026-01-25 13:30:59.177 +05:30 [INF] ::::::End of Middleware::::
+2026-01-25 13:31:25.432 +05:30 [INF] ::::In Middleware::::
+2026-01-25 13:31:25.790 +05:30 [INF] Created location Mahuva
+2026-01-25 13:31:25.793 +05:30 [INF] ::::::End of Middleware::::

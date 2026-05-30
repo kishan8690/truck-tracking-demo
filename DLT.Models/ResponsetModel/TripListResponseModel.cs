@@ -1,0 +1,24 @@
+namespace Models.ResponsetModel;
+
+public class TripListResponseModel
+{
+    public string TripSID { get; set; }
+    public string StartLocationName { get; set; }
+    public string ToLocationName { get; set; }
+    public string TripStatusName { get; set; }
+    public decimal StartLatitude { get; set; }
+    public decimal StartLongitude { get; set; }
+    public decimal ToLatitude { get; set; }
+    public decimal ToLongitude { get; set; }
+    public int TripStatus { get; set; }
+    public string DriverName { get; set; }
+    public DateTime LastModifiedDate { get; set; }
+}
+
+public class TripTileResponseModel
+{
+    public int TotalNumberOfTrips { get; set; }
+    public int InProgressTrips { get; set; }
+    public int CompletedTrips { get; set; }
+    public int PendingTrips { get; set; }
+}

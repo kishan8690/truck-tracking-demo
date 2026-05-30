@@ -1,0 +1,209 @@
+2026-03-05 18:31:36.522 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:31:36.522 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:31:36.586 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:31:36.586 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:31:36.590 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:31:36.670 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:31:36.671 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:31:36.678 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:37.753 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:37.755 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:37.760 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:37.971 +05:30 [INF] Login attempt for Email: admin@gmail.com
+2026-03-05 18:32:37.977 +05:30 [INF] Attempting login for user with email: admin@gmail.com
+2026-03-05 18:32:39.047 +05:30 [WRN] Login failed. Wrong password for email: admin@gmail.com
+2026-03-05 18:32:39.051 +05:30 [ERR] HTTP error occurred during login for email: admin@gmail.com
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+2026-03-05 18:32:39.057 +05:30 [ERR] Exception occurred during login for Email: admin@gmail.com
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+   at DLT.Api.Controllers.UserController.Login(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 53
+2026-03-05 18:32:39.063 +05:30 [WRN] Custom HttpStatusCodeException: Password is Wrong
+Common.HttpStatusCodeException: Password is Wrong
+   at DLT.Service.Repository.Implementation.UserRepository.LoginUser(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Service/Repository/Implementation/UserRepository.cs:line 102
+   at DLT.Api.Controllers.UserController.Login(LoginRequestModel request) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Controllers/UserController.cs:line 53
+   at lambda_method6(Closure, Object)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Logged|12_1(ControllerActionInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at ExceptionMiddleware.InvokeAsync(HttpContext context) in /Users/kishanchudasama/PrioxisTech/DriverLocationTrackingBackend/DLT.Api/Middlewares/ExceptionMiddleware.cs:line 23
+2026-03-05 18:32:39.071 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:42.644 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:42.653 +05:30 [INF] Login attempt for Email: admin@gmail.com
+2026-03-05 18:32:42.654 +05:30 [INF] Attempting login for user with email: admin@gmail.com
+2026-03-05 18:32:42.924 +05:30 [INF] User login successful for email: admin@gmail.com
+2026-03-05 18:32:42.925 +05:30 [INF] Generating JWT token for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-03-05 18:32:42.935 +05:30 [INF] JWT token generated successfully for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953
+2026-03-05 18:32:42.935 +05:30 [INF] Login successful for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-03-05 18:32:42.948 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:43.198 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:43.199 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:43.199 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:43.200 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:43.202 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:43.230 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 18:32:43.236 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 18:32:43.419 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:32:43.460 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 18:32:43.490 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:32:43.491 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:32:43.493 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 18:32:43.493 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 18:32:43.502 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:32:43.502 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 18:32:43.503 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:18.573 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:18.574 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:18.591 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:18.591 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:18.620 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:18.656 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-03-05 18:41:18.832 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-03-05 18:41:19.003 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:19.004 +05:30 [INF] Successfully fetched 1 trips
+2026-03-05 18:41:19.013 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.015 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.017 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-03-05 18:41:19.018 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-03-05 18:41:19.029 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:19.029 +05:30 [INF] Successfully fetched 1 trips
+2026-03-05 18:41:19.031 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.064 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.065 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.092 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.104 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.102 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.120 +05:30 [INF] Fetching current location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.122 +05:30 [INF] Fetching driver current location for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.328 +05:30 [INF] Trip details retrieved successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.328 +05:30 [INF] Successfully fetched driver location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.333 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.335 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.336 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.336 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.337 +05:30 [INF] Fetching current location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.340 +05:30 [INF] Fetching driver current location for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.341 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.348 +05:30 [INF] Fetching trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.349 +05:30 [INF] Starting GetAllTripUpdateStatus operation for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.350 +05:30 [INF] Trip details retrieved successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.350 +05:30 [INF] Successfully fetched driver location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.351 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.454 +05:30 [INF] GetAllTripUpdateStatus operation completed successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9. Retrieved 3 trip updates
+2026-03-05 18:41:19.455 +05:30 [INF] Successfully fetched trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.461 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:19.467 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:19.469 +05:30 [INF] Fetching trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.469 +05:30 [INF] Starting GetAllTripUpdateStatus operation for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.484 +05:30 [INF] GetAllTripUpdateStatus operation completed successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9. Retrieved 3 trip updates
+2026-03-05 18:41:19.486 +05:30 [INF] Successfully fetched trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:19.489 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:23.476 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:23.484 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-03-05 18:41:23.486 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-03-05 18:41:23.510 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:23.511 +05:30 [INF] Successfully fetched 1 trips
+2026-03-05 18:41:23.511 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:23.518 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:23.521 +05:30 [INF] Fetching current location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.521 +05:30 [INF] Fetching driver current location for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.528 +05:30 [INF] Trip details retrieved successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.528 +05:30 [INF] Successfully fetched driver location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.528 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:23.532 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:23.532 +05:30 [INF] Fetching trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.533 +05:30 [INF] Starting GetAllTripUpdateStatus operation for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.537 +05:30 [INF] GetAllTripUpdateStatus operation completed successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9. Retrieved 3 trip updates
+2026-03-05 18:41:23.537 +05:30 [INF] Successfully fetched trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:23.537 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.476 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.477 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.478 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.480 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-03-05 18:41:28.481 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-03-05 18:41:28.499 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:28.499 +05:30 [INF] Successfully fetched 1 trips
+2026-03-05 18:41:28.500 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.502 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.502 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.503 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.503 +05:30 [INF] Fetching current location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.503 +05:30 [INF] Fetching driver current location for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.510 +05:30 [INF] Trip details retrieved successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.510 +05:30 [INF] Successfully fetched driver location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.511 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.513 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.514 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:28.515 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:28.516 +05:30 [INF] Fetching trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.516 +05:30 [INF] Starting GetAllTripUpdateStatus operation for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.522 +05:30 [INF] GetAllTripUpdateStatus operation completed successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9. Retrieved 3 trip updates
+2026-03-05 18:41:28.522 +05:30 [INF] Successfully fetched trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:28.523 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:33.472 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:33.474 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":null,"SortOrder":null,"Filters":"[{\"key\":\"TripSID\",\"value\":\"TRI-e9535771-3442-47eb-936b-70b8b501dca9\",\"condition\":\"=\"}]","$type":"SearchRequestModel"}
+2026-03-05 18:41:33.475 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"UpdatedAt","SortOrder":"DESC","SearchText":"%","Filters":"( TripSID = 'TRI-e9535771-3442-47eb-936b-70b8b501dca9' ) AND","Page":1,"PageSize":10}
+2026-03-05 18:41:33.492 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:33.492 +05:30 [INF] Successfully fetched 1 trips
+2026-03-05 18:41:33.493 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:33.495 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:33.496 +05:30 [INF] Fetching current location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.497 +05:30 [INF] Fetching driver current location for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.505 +05:30 [INF] Trip details retrieved successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.505 +05:30 [INF] Successfully fetched driver location for TripId: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.505 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:33.508 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:33.508 +05:30 [INF] Fetching trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.509 +05:30 [INF] Starting GetAllTripUpdateStatus operation for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.514 +05:30 [INF] GetAllTripUpdateStatus operation completed successfully for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9. Retrieved 3 trip updates
+2026-03-05 18:41:33.514 +05:30 [INF] Successfully fetched trip update status for TripSID: TRI-e9535771-3442-47eb-936b-70b8b501dca9
+2026-03-05 18:41:33.515 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:34.242 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:34.242 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:34.245 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:34.245 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:34.248 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:34.251 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 18:41:34.251 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 18:41:34.265 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:34.265 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 18:41:34.265 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 18:41:34.266 +05:30 [INF] ::::In Middleware::::
+2026-03-05 18:41:34.267 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 18:41:34.267 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 18:41:34.276 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 18:41:34.276 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 18:41:34.276 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:19:56.509 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:19:56.509 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:19:56.571 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:19:56.571 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:19:56.575 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:19:56.773 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 19:19:56.787 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 19:19:57.573 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 19:19:57.620 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 19:19:57.710 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:19:57.713 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:19:57.713 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-05 19:19:57.713 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-05 19:19:57.752 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-05 19:19:57.753 +05:30 [INF] Successfully fetched 10 trips
+2026-03-05 19:19:57.753 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:20:59.393 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:20:59.400 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:21:39.720 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:21:40.847 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:23:37.601 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:23:38.634 +05:30 [INF] ::::::End of Middleware::::
+2026-03-05 19:27:39.998 +05:30 [INF] ::::In Middleware::::
+2026-03-05 19:27:41.225 +05:30 [INF] ::::::End of Middleware::::

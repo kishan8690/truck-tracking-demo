@@ -1,0 +1,10 @@
+2026-05-29 21:47:02.731 +05:30 [INF] ::::In Middleware::::
+2026-05-29 21:47:02.960 +05:30 [INF] Login attempt for Email: admin@gmail.com
+2026-05-29 21:47:02.963 +05:30 [INF] Attempting login for user with email: admin@gmail.com
+2026-05-29 21:47:06.011 +05:30 [INF] User login successful for email: admin@gmail.com
+2026-05-29 21:47:06.012 +05:30 [INF] Generating JWT token for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-05-29 21:47:06.030 +05:30 [INF] JWT token generated successfully for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953
+2026-05-29 21:47:06.030 +05:30 [INF] Login successful for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-05-29 21:47:06.050 +05:30 [INF] ::::::End of Middleware::::
+2026-05-29 21:47:44.115 +05:30 [INF] ::::In Middleware::::
+2026-05-29 21:47:47.686 +05:30 [INF] ::::::End of Middleware::::

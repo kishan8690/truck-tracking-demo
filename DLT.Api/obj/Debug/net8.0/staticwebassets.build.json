@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "CZ9aV7gYgJ8FrOhePWZnKvFpF5faaf1vpIYHdg/y2oA=",
+  "Source": "DLT.Api",
+  "BasePath": "_content/DLT.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

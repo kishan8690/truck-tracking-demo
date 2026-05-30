@@ -1,0 +1,192 @@
+2026-03-22 12:15:08.653 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.653 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.653 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.653 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.713 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.713 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.713 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.713 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.716 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.716 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.794 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.794 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.797 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.797 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:08.800 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:08.800 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:35.989 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:35.990 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:35.994 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:36.167 +05:30 [INF] Login attempt for Email: admin@gmail.com
+2026-03-22 12:15:36.170 +05:30 [INF] Attempting login for user with email: admin@gmail.com
+2026-03-22 12:15:37.306 +05:30 [INF] User login successful for email: admin@gmail.com
+2026-03-22 12:15:37.307 +05:30 [INF] Generating JWT token for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-03-22 12:15:37.317 +05:30 [INF] JWT token generated successfully for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953
+2026-03-22 12:15:37.317 +05:30 [INF] Login successful for UserSID: USR-cdd2deb9-ca97-4e83-9f96-3af749bd4953, Role: 4
+2026-03-22 12:15:37.336 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.622 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.623 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.623 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.623 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.625 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.624 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.625 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.629 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.629 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.633 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.710 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.711 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.721 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.835 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:15:37.836 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:15:37.845 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:18:50.006 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:18:50.006 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:18:50.007 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:18:50.007 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:18:50.011 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:18:50.015 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:18:50.037 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:18:50.048 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.143 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.144 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.155 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.156 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.156 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.156 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.159 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.172 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.172 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.172 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.178 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:19:27.186 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-22 12:19:27.189 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.190 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.213 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.397 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-22 12:19:27.411 +05:30 [INF] Successfully fetched 10 trips
+2026-03-22 12:19:27.447 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:19:27.447 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:19:27.449 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:19:27.450 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-22 12:19:27.455 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-22 12:19:27.455 +05:30 [INF] Successfully fetched 10 trips
+2026-03-22 12:19:27.456 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:00.090 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:00.090 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:00.102 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:00.102 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:00.105 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:00.119 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:00.122 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:00.226 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:00.238 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:20:00.253 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:00.254 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:00.255 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:00.256 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:00.268 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:00.268 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:20:00.268 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:06.687 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:06.687 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:06.690 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:06.694 +05:30 [INF] Fetching all driver with search filter {"SearchText":"dee","Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:06.696 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:06.731 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:06.732 +05:30 [INF] Fetched 1 trips for driver
+2026-03-22 12:20:06.733 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.020 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.021 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.024 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.027 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:09.027 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:09.062 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:09.063 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:20:09.064 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.614 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.614 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.614 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.614 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.625 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.634 +05:30 [INF] Fetching all locations
+2026-03-22 12:20:09.636 +05:30 [INF] Fetching all locations
+2026-03-22 12:20:09.674 +05:30 [INF] Successfully retrieved 8 locations
+2026-03-22 12:20:09.674 +05:30 [INF] Repository returned result: [{"LocationSID":"LOC-D85D4416-BC47-4C58-B386-552BC88D53EE","LocationName":"Bengaluru - MG Road","Latitude":56.000000,"Longitude":23.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-5CC40B58-4DA1-441A-9ECD-09A3F4C261AE","LocationName":"Kempegowda International Airport","Latitude":23.000000,"Longitude":44.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-A8A46283-2C58-4A65-8C00-8E650FBC688A","LocationName":"Electronic City","Latitude":22.000000,"Longitude":22.500000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-FCD012F9-6791-4B50-B8F3-8A129EF9BE33","LocationName":"Koramangala","Latitude":23.000000,"Longitude":43.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-97105C9D-05D5-4643-AAA0-CDA489FAFD82","LocationName":"Whitefield","Latitude":21.000000,"Longitude":22.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-D4F0300E-7E20-42E5-86E5-93C8B51DE1D1","LocationName":"Yelahanka","Latitude":23.000000,"Longitude":56.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-9DA77669-18F7-431B-9385-2EC6068A3988","LocationName":"Indiranagar","Latitude":12.000000,"Longitude":21.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-8D5791E5-EED9-4212-BF28-B54C8BE52FD2","LocationName":"Hebbal","Latitude":56.000000,"Longitude":78.000000,"$type":"LocationResponseModel"}]
+2026-03-22 12:20:09.680 +05:30 [INF] Successfully fetched 8 locations
+2026-03-22 12:20:09.681 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:09.682 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:09.683 +05:30 [INF] Fetching all locations
+2026-03-22 12:20:09.683 +05:30 [INF] Fetching all locations
+2026-03-22 12:20:09.687 +05:30 [INF] Successfully retrieved 8 locations
+2026-03-22 12:20:09.687 +05:30 [INF] Repository returned result: [{"LocationSID":"LOC-D85D4416-BC47-4C58-B386-552BC88D53EE","LocationName":"Bengaluru - MG Road","Latitude":56.000000,"Longitude":23.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-5CC40B58-4DA1-441A-9ECD-09A3F4C261AE","LocationName":"Kempegowda International Airport","Latitude":23.000000,"Longitude":44.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-A8A46283-2C58-4A65-8C00-8E650FBC688A","LocationName":"Electronic City","Latitude":22.000000,"Longitude":22.500000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-FCD012F9-6791-4B50-B8F3-8A129EF9BE33","LocationName":"Koramangala","Latitude":23.000000,"Longitude":43.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-97105C9D-05D5-4643-AAA0-CDA489FAFD82","LocationName":"Whitefield","Latitude":21.000000,"Longitude":22.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-D4F0300E-7E20-42E5-86E5-93C8B51DE1D1","LocationName":"Yelahanka","Latitude":23.000000,"Longitude":56.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-9DA77669-18F7-431B-9385-2EC6068A3988","LocationName":"Indiranagar","Latitude":12.000000,"Longitude":21.000000,"$type":"LocationResponseModel"},{"LocationSID":"LOC-8D5791E5-EED9-4212-BF28-B54C8BE52FD2","LocationName":"Hebbal","Latitude":56.000000,"Longitude":78.000000,"$type":"LocationResponseModel"}]
+2026-03-22 12:20:09.688 +05:30 [INF] Successfully fetched 8 locations
+2026-03-22 12:20:09.689 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:24.139 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:24.139 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:24.139 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:24.139 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:24.141 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:24.143 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:24.143 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:24.193 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:24.193 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:20:24.193 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:24.196 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:24.198 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:24.199 +05:30 [INF] Fetching all drivers
+2026-03-22 12:20:24.221 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:20:24.222 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:20:24.222 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.686 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.686 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.687 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.687 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.688 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.688 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.688 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.691 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.692 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.693 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:32.693 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-22 12:20:32.696 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.712 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-22 12:20:32.713 +05:30 [INF] Successfully fetched 10 trips
+2026-03-22 12:20:32.714 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.714 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.717 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.724 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:20:32.725 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:20:32.725 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:20:32.726 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-22 12:20:32.735 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-22 12:20:32.735 +05:30 [INF] Successfully fetched 10 trips
+2026-03-22 12:20:32.735 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:23:25.164 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:23:25.164 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:23:25.165 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:23:25.165 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:23:25.172 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:23:25.172 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:23:25.201 +05:30 [INF] Fetching all trips with search model: {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"lastModifiedDate","SortOrder":"DESC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:23:25.201 +05:30 [INF] Starting GetAllTrips operation with parameters: {"SortColumn":"lastModifiedDate","SortOrder":"DESC","SearchText":"%","Filters":"1 = 1 AND","Page":1,"PageSize":10}
+2026-03-22 12:23:25.240 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:23:25.274 +05:30 [INF] GetAllTrips operation completed successfully.
+2026-03-22 12:23:25.276 +05:30 [INF] Successfully fetched 10 trips
+2026-03-22 12:23:25.283 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:24:46.096 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:24:46.098 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:24:46.101 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:24:46.101 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:24:46.113 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:24:46.119 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:24:46.120 +05:30 [INF] Fetching all drivers
+2026-03-22 12:24:46.221 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:24:46.222 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:24:46.224 +05:30 [INF] ::::::End of Middleware::::
+2026-03-22 12:24:46.224 +05:30 [INF] ::::In Middleware::::
+2026-03-22 12:24:46.265 +05:30 [INF] Fetching all driver with search filter {"SearchText":null,"Page":1,"PageSize":10,"SortColumn":"UserName","SortOrder":"ASC","Filters":null,"$type":"SearchRequestModel"}
+2026-03-22 12:24:46.265 +05:30 [INF] Fetching all drivers
+2026-03-22 12:24:46.279 +05:30 [INF] Successfully retrieved drivers
+2026-03-22 12:24:46.280 +05:30 [INF] Fetched 3 trips for driver
+2026-03-22 12:24:46.280 +05:30 [INF] ::::::End of Middleware::::

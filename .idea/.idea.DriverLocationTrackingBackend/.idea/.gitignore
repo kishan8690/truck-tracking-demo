@@ -1,0 +1,68 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio files
+.vs/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider
+.idea/
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# IIS Express
+/.vs/config/
+
+# Publish output
+publish/
+wwwroot/uploads/
+
+# NuGet
+*.nupkg
+packages/
+.nuget/
+
+# Entity Framework
+*.dbmdl
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Environment files
+appsettings.Development.json
+.env
+
+# Node modules (if React/Angular frontend exists)
+node_modules/
+
+# React build files
+dist/
+build/
+
+# Coverage reports
+coverage/
+*.coverage
+*.coveragexml
+
+# Temporary files
+*.tmp
+*.temp
+
+# Azure
+*.PublishSettings
