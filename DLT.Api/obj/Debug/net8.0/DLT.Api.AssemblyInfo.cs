@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DLT.Api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c75f29d222a12f4af6b808a85b0f93a91ff11000")]
 [assembly: System.Reflection.AssemblyProductAttribute("DLT.Api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DLT.Api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
