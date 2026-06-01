@@ -3,46 +3,43 @@ name: Deploy .NET API to AWS Elastic Beanstalk
 on:
   push:
     branches:
-      - main # Change this to your default branch if it's not 'main' (e.g., 'master')
+      - main
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v3
+      - name: Checkout code
+        uses: actions/checkout@v3
 
-    - name: Setup .NET
-      uses: actions/setup-dotnet@v3
-      with:
-        dotnet-version: '8.0.x' # Update this if you're using a different .NET version (e.g., '6.0.x' or '7.0.x')
+      - name: Setup .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
 
-    - name: Restore dependencies
-      run: dotnet restore
+      - name: Restore dependencies
+        run: dotnet restore
 
-    - name: Build
-      run: dotnet build --configuration Release --no-restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
 
-    - name: Publish
-      run: dotnet publish DLT.Api/DLT.Api.csproj -c Release -o ./publish
+      - name: Publish
+        run: dotnet publish DLT.Api/DLT.Api.csproj -c Release -o ./publish
 
-    - name: Create Procfile
-      run: echo "web: dotnet DLT.Api.dll --urls http://0.0.0.0:5000" > ./publish/Procfile
+      - name: Create deployment zip
+        run: |
+          cp Procfile ./publish/Procfile
+          cd publish
+          zip -r ../deploy.zip .
+          cd ..
 
-    - name: Create deployment zip
-      run: |
-        cd publish
-        zip -r ../deploy.zip .
-        cd ..
-
-    - name: Deploy to AWS Elastic Beanstalk
-      uses: einaregilsson/beanstalk-deploy@v21
-      with:
-        aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        application_name: tracking-app
-        environment_name: tracking-app-prod
-        version_label: ${{ github.sha }}
-        region: us-east-2 # Change this if your Elastic Beanstalk is in a different region
-        deployment_package: deploy.zip
+      - name: Deploy to AWS Elastic Beanstalk
+        uses: einaregilsson/beanstalk-deploy@v21
+        with:
+          aws_access_key: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws_secret_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          application_name: tracking-app
+          environment_name: tracking-app-prod
+          version_label: ${{ github.sha }}
+          region: us-east-2
+          deployment_package: deploy.zip
