@@ -27,6 +27,9 @@ jobs:
     - name: Publish
       run: dotnet publish DLT.Api/DLT.Api.csproj -c Release -o ./publish
 
+    - name: Create Procfile
+      run: echo "web:\ dotnet DLT.Api.dll" > ./publish/Procfile
+
     - name: Create deployment zip
       run: |
         cd publish
