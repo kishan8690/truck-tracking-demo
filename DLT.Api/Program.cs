@@ -41,10 +41,9 @@ public class Program
         // Connection String
         var connectionString = builder.Configuration.GetConnectionString("DBConnection");
 
-        // Serilog
+        // Serilog - removed WriteTo.File to prevent permission errors on AWS
         Log.Logger = new LoggerConfiguration()
             .WriteTo.Console()
-            .WriteTo.File("log.txt", rollingInterval: RollingInterval.Day, rollOnFileSizeLimit: true)
             .CreateLogger();
 
         // FluentValidation
