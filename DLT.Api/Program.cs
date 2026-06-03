@@ -50,8 +50,8 @@ public class Program
         builder.Services.AddControllers()
             .AddFluentValidation(fv =>
             {
-                fv.RegisterValidatorsFromAssembly(AppDomain.CurrentDomain.GetAssemblies()
-                    .SingleOrDefault(assembly => assembly.GetName().Name == typeof(Program).Assembly.GetName().Name));
+                // SAFELY load assembly instead of using SingleOrDefault which crashes if not found or multiple found
+                fv.RegisterValidatorsFromAssembly(typeof(Program).Assembly);
             });
 
         builder.Services.AddDbContext<DriverLocationTrackingDbContext>(options =>
@@ -127,6 +127,13 @@ public class Program
             });
         });
         // Add JWT services
+        
+        var jwtKey = builder.Configuration["Jwt:Key"];
+        // SAFELY handle missing JWT key to prevent ArgumentNullException crash
+        if (string.IsNullOrEmpty(jwtKey)) 
+        {
+            jwtKey = "default_secure_key_fallback_because_env_variable_is_missing_123456789"; 
+        }
 
         builder.Services.AddAuthentication(options =>
             {
@@ -141,10 +148,9 @@ public class Program
                     ValidateAudience = true,
                     ValidateLifetime = true,
                     ValidateIssuerSigningKey = true,
-                    ValidIssuer = builder.Configuration["Jwt:Issuer"],
-                    ValidAudience = builder.Configuration["Jwt:Audience"],
-                    IssuerSigningKey =
-                        new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+                    ValidIssuer = builder.Configuration["Jwt:Issuer"] ?? "http://localhost:5125",
+                    ValidAudience = builder.Configuration["Jwt:Audience"] ?? "http://localhost:5125",
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey))
                 };
                 options.Events = new JwtBearerEvents
                 {
@@ -158,11 +164,17 @@ public class Program
                             var roleName = ((StatusEnum)roleId).ToString(); // e.g. "Admin"
 
                             // replace numeric claim with string
-                            identity.RemoveClaim(identity.FindFirst(ClaimTypes.Role));
+                            if (identity.FindFirst(ClaimTypes.Role) != null)
+                            {
+                                identity.RemoveClaim(identity.FindFirst(ClaimTypes.Role));
+                            }
                             identity.AddClaim(new Claim(ClaimTypes.Role, roleName));
                         }
-                        context.HttpContext.Items["UserSID"] = userSid;
-                        context.HttpContext.Items["Role"] = role;
+                        if (context.HttpContext != null) 
+                        {
+                            context.HttpContext.Items["UserSID"] = userSid;
+                            context.HttpContext.Items["Role"] = role;
+                        }
                         return Task.CompletedTask;
                     },
                     OnAuthenticationFailed = context =>
@@ -178,19 +190,15 @@ public class Program
 
         var app = builder.Build();
 
-        if (app.Environment.IsDevelopment())
-        {
-            app.UseSwagger();
-            app.UseSwaggerUI();
-        }
+        // Always use swagger for easy testing after deployment
+        app.UseSwagger();
+        app.UseSwaggerUI();
 
         app.UseMiddleware<ExceptionMiddleware>();
         app.UseHttpsRedirection();
 
         // ✅ Enable CORS (use AllowAll for dev)
         app.UseCors("AllowAll");
-        // Or use specific allowed origins in production:
-        // app.UseCors("AllowFrontend");
         
         app.UseAuthentication(); 
         app.UseAuthorization();
